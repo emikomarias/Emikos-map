@@ -33,11 +33,11 @@
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
-var MapTilesAPI_OSMEspagnol = L.tileLayer('https://maptiles.p.rapidapi.com/es/map/v1/{z}/{x}/{y}.png?rapidapi-key={apikey}', {
+L.tileLayer('https://maptiles.p.rapidapi.com/es/map/v1/{z}/{x}/{y}.png?rapidapi-key={apikey}', {
 	attribution: '&copy; <a href="http://www.maptilesapi.com/">MapTiles API</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 	apikey: '<your apikey>',
 	maxZoom: 19
-  }).addTo(map);
+  });
 
   /* Display a point marker with pop-up text */
   L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
